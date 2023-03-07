@@ -11,7 +11,7 @@ const App = () => {
 
   const search = (term) => {
     console.log(`${term} was searched`);
-    axios.post('/repos', {term})
+    axios.post('/repos', {term: term})
     .then((response) => {
       console.log('post successful: ', response);
     })
